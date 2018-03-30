@@ -1,7 +1,7 @@
 # Find a pet
 Browse through a catalogue of adoptable pets.
 
-### Created with the Meteor framework.
+### Created with the Meteor framework & ReactJS
 
 ## Instructions
 

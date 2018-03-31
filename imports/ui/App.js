@@ -26,9 +26,10 @@ export default class App extends Component {
         <header>
           <h1> Find a pet </h1>
         </header>
-        <ul>
-          {this.renderAnimals()}
-        </ul>
+        // <ul>
+        //   {this.renderAnimals()}
+        // </ul>
+        
       </div>
     );
   }

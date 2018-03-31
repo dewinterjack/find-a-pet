@@ -9,6 +9,8 @@ Browse through a catalogue of adoptable pets.
 
 ```
 git clone https://github.com/dewinterjack/find_a_pet
+
 cd find_a_pet
+
 meteor
 ```

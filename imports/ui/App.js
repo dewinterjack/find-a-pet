@@ -6,9 +6,9 @@ import Animal from './Animal.js';
 export default class App extends Component {
   getAnimals(){
     return [
-      { _id: 1, text 'Our first dog'},
-      { _id: 2, text 'A cat'},
-      { _id: 3, text 'Second dog'},
+      { _id: 1, text: 'Our first dog'},
+      { _id: 2, text: 'A cat'},
+      { _id: 3, text: 'Second dog'},
     ];
   }
 

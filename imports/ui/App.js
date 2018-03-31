@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import { withTracker } from 'meteor/react-meteor-data';
 import Animal from './Animal.js';
+import { Animals } from '../api/animals.js';
 
 // App Component ~ this covers the whole application
 

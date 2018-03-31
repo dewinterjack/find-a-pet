@@ -5,4 +5,4 @@ Browse through a catalogue of adoptable pets.
 
 ## Instructions
 
-#### Work in progress.
+#### Work in progress. This app will be deployed over Google App Engine.

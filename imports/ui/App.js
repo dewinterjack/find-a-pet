@@ -22,6 +22,7 @@ export default class App extends Component {
   }
 
   renderAnimals(){
+    let animals = this.props.animals
     return this.getAnimals().map((animal) => (
       <Animal key={animal._id} animal={animal} />
     ));

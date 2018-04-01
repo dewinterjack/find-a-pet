@@ -6,6 +6,12 @@ import "react-table/react-table.css";
 // Animals data table
 
 export default class PetsTable extends Component {
+  // constructor(){
+  //   super();
+  //   this.state = {
+  //     data: getAnimals()
+  //   }
+  // }
   render(){
     return(
       <ReactTable
@@ -32,8 +38,16 @@ export default class PetsTable extends Component {
             accessor: "breed"
           },
           {
-            Header: "Location",
-            accessor: "location"
+            Header: "Gender",
+            accessor: "gender"
+          },
+          {
+            Header: "Color",
+            accessor: "color"
+          },
+          {
+            Header: "Address",
+            accessor: "address"
           }
         ]
       },

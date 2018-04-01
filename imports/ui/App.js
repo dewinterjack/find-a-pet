@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
+
 import Animal from './Animal.js';
 import { Animals } from '../api/animals.js';
 import PetsTable from './PetsTable.js';
-
-// Import React Table
-import ReactTable from "react-table";
-import "react-table/react-table.css";
 
 // App Component ~ this covers the whole application
 
@@ -15,11 +12,17 @@ class App extends Component {
     super(props);
   }
   getAnimals(){
-    return [
-      { _id: 1, text: 'Our first dog'},
-      { _id: 2, text: 'A cat'},
-      { _id: 3, text: 'Second dog'},
-    ];
+    let animals = this.props.animals;
+    return animals.map(animal => {
+      return {
+        petName: animal.Animal_Name,
+        animal: animal.animal_type,
+        breed: animal.Animal_Breed,
+        gender: animal.Animal_Gender,
+        color: animal.Animal_Color,
+        address: animal.Address
+      };
+    });
   }
 
   renderAnimals(){
@@ -29,14 +32,9 @@ class App extends Component {
     ));
   }
 
-  // renderFirst(){
-  //   var firstAnimal = Animals.findOne();
-  //   return firstAnimal.animal_type;
-  // }
-
   render(){
     console.log("Hello Dev Tools!");
-    console.log(this.getAnimals);
+    console.log(this.getAnimals());
     return (
       <div className="container">
         <header>

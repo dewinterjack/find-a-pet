@@ -22,13 +22,19 @@ export default class App extends Component {
   }
 
   renderAnimals(){
-    let animals = this.props.animals
+    let animals = this.props.animals;
     return this.getAnimals().map((animal) => (
       <Animal key={animal._id} animal={animal} />
     ));
   }
 
+  // renderFirst(){
+  //   var firstAnimal = Animals.findOne();
+  //   return firstAnimal.animal_type;
+  // }
+
   render(){
+    console.log("Hello Dev Tools!")
     return (
       <div className="container">
         <header>
@@ -81,3 +87,6 @@ export default class App extends Component {
     );
   }
 }
+
+// Seperate from the App Component class, we are calling withTracker, giving it our Component.
+//withTracker();

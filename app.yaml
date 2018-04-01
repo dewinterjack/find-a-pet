@@ -1,0 +1,6 @@
+runtime: custom
+env: flex
+env_variables:
+  ROOT_URL: https://pet-catalogue.appspot-preview.com
+  MONGO_URL: mongodb://127.0.0.1:3001/meteor
+  DISABLE_WEBSOCKETS: "1"

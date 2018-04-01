@@ -9,7 +9,7 @@ import "react-table/react-table.css";
 
 // App Component ~ this covers the whole application
 
-export default class App extends Component {
+class App extends Component {
   constructor(props){
     super(props);
   }
@@ -23,7 +23,7 @@ export default class App extends Component {
 
   renderAnimals(){
     let animals = this.props.animals;
-    return this.getAnimals().map((animal) => (
+    return animals.map((animal) => (
       <Animal key={animal._id} animal={animal} />
     ));
   }
@@ -34,7 +34,8 @@ export default class App extends Component {
   // }
 
   render(){
-    console.log("Hello Dev Tools!")
+    console.log("Hello Dev Tools!");
+    console.log(this.getAnimals);
     return (
       <div className="container">
         <header>
@@ -89,4 +90,10 @@ export default class App extends Component {
 }
 
 // Seperate from the App Component class, we are calling withTracker, giving it our Component.
-//withTracker();
+export default withTracker(() => {
+  return {
+    animals: Animals.find({}).fetch(),
+  };
+})(App);
+// We are giving App the props of our animals
+// App re-renders when the database changes.

@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 export default class Animal extends Component {
   render() {
     return (
-      <li>{this.props.animal.text}</li>
+      <li>{this.props.animal.Animal_Name}</li>
     );
   }
 }

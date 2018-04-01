@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { withTracker } from 'meteor/react-meteor-data';
 import Animal from './Animal.js';
 import { Animals } from '../api/animals.js';
+import PetsTable from './PetsTable.js';
 
 // Import React Table
 import ReactTable from "react-table";
@@ -41,49 +42,7 @@ class App extends Component {
         <header>
           <h1> Find a pet </h1>
         </header>
-        <ul>
-          {this.renderAnimals()}
-        </ul>
-        <ReactTable
-        columns={[
-        {
-          Header: "Pet",
-          columns: [
-            {
-              Header: "Pet Name",
-              accessor: "petName"
-            },
-            {
-              Header: "Animal",
-              id: "animal",
-              accessor: d => d.animal
-            }
-          ]
-        },
-        {
-          Header: "Pet Info",
-          columns: [
-            {
-              Header: "Breed",
-              accessor: "breed"
-            },
-            {
-              Header: "Location",
-              accessor: "location"
-            }
-          ]
-        },
-        {
-          Header: 'Stats',
-          columns: [
-            {
-              Header: "Visits",
-              accessor: "visits"
-            }
-          ]
-        }
-      ]}
-        className="-striped -highlight"/>
+        <PetsTable />
       </div>
     );
   }

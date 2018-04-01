@@ -2,19 +2,23 @@ import React, {Component} from 'react';
 
 import ReactTable from "react-table";
 import "react-table/react-table.css";
+import { Animals } from "../api/animals.js";
+import {App} from "./App"
+
 
 // Animals data table
 
-export default class PetsTable extends Component {
-  // constructor(){
-  //   super();
-  //   this.state = {
-  //     data: getAnimals()
-  //   }
-  // }
+export class PetsTable extends Component {
+  constructor(props){
+    super(props);
+  }
+
   render(){
+    console.log(this.props.data);
+    data = this.props.data;
     return(
       <ReactTable
+      data={data}
       columns={[
       {
         Header: "Pet",

@@ -19,6 +19,7 @@
       "resolved": "https://registry.npmjs.org/asap/-/asap-2.0.6.tgz",
       "version": "2.0.6"
     },
+    "axios": "^0.18.0",
     "classnames": {
       "integrity": "sha1-+zgB1FNGdknvNgPH1hoCvRKb3m0=",
       "resolved": "https://registry.npmjs.org/classnames/-/classnames-2.2.5.tgz",
@@ -815,6 +816,7 @@
       "resolved": "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz",
       "version": "0.11.1"
     },
+    "request": "^2.85.0",
     "setimmediate": {
       "integrity": "sha1-KQy7Iy4waULX1+qbg3Mqt4VvgoU=",
       "resolved": "https://registry.npmjs.org/setimmediate/-/setimmediate-1.0.5.tgz",

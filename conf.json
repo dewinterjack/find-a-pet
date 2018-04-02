@@ -20,7 +20,7 @@
     },
     "templates": {
         "cleverLinks": true,
-        "monospaceLinks": false
+        "monospaceLinks": true
     },
     "docdash": {
         "static": [true],

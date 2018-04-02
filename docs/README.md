@@ -14,3 +14,5 @@ cd find_a_pet
 
 meteor
 ```
+
+[test](../imports/ui/test.md)

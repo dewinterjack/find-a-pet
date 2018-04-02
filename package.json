@@ -6,6 +6,10 @@
     "predeploy": "npm run dist && cp app.yaml ../bundle/ && cp Dockerfile ../bundle/",
     "generate-docs": "node_modules/.bin/jsdoc -c conf.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dewinterjack/find_a_pet.git"
+  },
   "requires": true,
   "lockfileVersion": 1,
   "dependencies": {

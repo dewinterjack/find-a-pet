@@ -802,6 +802,7 @@
     },
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
+    "react-responsive": "^4.1.0",
     "react-table": "^6.8.0",
     "regenerator-runtime": {
       "integrity": "sha512-MguG95oij0fC3QV3URf4V2SDYGJhJnJGqvIIgdECeODCT98wSWDAJ94SSuVpYQUoTcGUIL6L4yNB7j1DFFHSBg==",

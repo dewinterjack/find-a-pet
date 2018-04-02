@@ -1,3 +1,13 @@
+/**
+* Hello
+* @module jack
+* @summary Retrieving animal details into an object.
+* @param {Object[]} animals - Animals in the database.
+- **`'STRING'`**: random strings
+- **`'MONGO'`**:  random [`Mongo.ObjectID`](#mongo_object_id) values
+* @static
+*/
+
 export default function getAnimals(animals){
   return animals.map(animal => {
     return {

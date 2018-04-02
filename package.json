@@ -3,7 +3,8 @@
     "cleanup": "rm -rf ../bundle/",
     "deploy": "npm run predeploy && (cd ../bundle && gcloud app deploy -q)",
     "dist": "npm run cleanup && meteor build ../ --directory --architecture os.linux.x86_64 --server-only",
-    "predeploy": "npm run dist && cp app.yaml ../bundle/ && cp Dockerfile ../bundle/"
+    "predeploy": "npm run dist && cp app.yaml ../bundle/ && cp Dockerfile ../bundle/",
+    "generate-docs": "node_modules/.bin/jsdoc -c conf.json"
   },
   "requires": true,
   "lockfileVersion": 1,
@@ -25,6 +26,7 @@
       "version": "2.5.4"
     },
     "deploy": "^1.0.3",
+    "docdash": "^0.4.0",
     "encoding": {
       "integrity": "sha1-U4tm8+5izRq1HsMjgp0flIDHS+s=",
       "requires": {
@@ -824,5 +826,9 @@
       "resolved": "https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-2.0.4.tgz",
       "version": "2.0.4"
     }
+  },
+  "devDependencies": {
+    "jsdoc": "^3.5.5",
+    "tui-jsdoc-template": "^1.2.2"
   }
 }

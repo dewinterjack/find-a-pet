@@ -37,7 +37,9 @@ git clone https://github.com/dewinterjack/find_a_pet
 
 cd find_a_pet
 
+npm install
+
+curl https://install.meteor.com/ | sh
+
 meteor
 ```
-
-**Jack Dewinter**

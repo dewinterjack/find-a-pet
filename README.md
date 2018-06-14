@@ -43,3 +43,5 @@ curl https://install.meteor.com/ | sh
 
 meteor
 ```
+
+![Gif demo of application](app_demo.gif)
